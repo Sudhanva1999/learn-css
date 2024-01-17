@@ -5,7 +5,10 @@
         .outer {
           width: 30%;
           border: 10px solid #f5b942;
-          padding: -20px 5%;
+          /* Negative Padding has no effect as they are not valid. 
+             The browser doesn't raise any errors but it doesn't work either.
+          */
+          padding: 20px 5%;
         }
         .inner {
           padding: inherit;
